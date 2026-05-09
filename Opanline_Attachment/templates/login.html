@@ -1,0 +1,306 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+	<title>Opaline Attachment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/ionicons.min.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+	<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f3f4f8;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:linear-gradient(90deg,#ff4fa3,#3a86ff);
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+.navbar h2{
+    color:#fff;
+    font-weight:700;
+}
+.nav-links a{
+    color:#fff;
+    margin-left:25px;
+    text-decoration:none;
+    font-weight:500;
+    position:relative;
+}
+.nav-links a::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:2px;
+    background:#fff;
+    left:0;
+    bottom:-5px;
+    transition:0.3s;
+}
+.nav-links a:hover::after{
+    width:100%;
+}
+
+/* ===== HERO SECTION (Split Layout) ===== */
+.hero{
+    margin-top:80px;
+    padding:80px 8%;
+    background:#eef1f7;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+/* Left Side */
+.hero-left{
+    flex:1;
+}
+.hero-left h1{
+    font-size:40px;
+    color:#3a86ff;
+    margin-bottom:10px;
+}
+.hero-left h3{
+    color:#ff4fa3;
+    margin-bottom:20px;
+    font-weight:600;
+}
+.hero-left p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+.hero-left button{
+    padding:12px 28px;
+    border:none;
+    border-radius:30px;
+    background:#ff4fa3;
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+.hero-left button:hover{
+    background:#3a86ff;
+}
+
+/* Right Side */
+.hero-right{
+    flex:1;
+    background:linear-gradient(135deg,#ff4fa3,#3a86ff);
+    border-radius:20px;
+    padding:50px;
+    color:#fff;
+    text-align:center;
+}
+.hero-right i{
+    font-size:70px;
+    margin-bottom:20px;
+}
+.hero-right p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* ===== FEATURES ===== */
+.features{
+    padding:80px 8%;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+.section-title h2{
+    color:#3a86ff;
+}
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+.feature-box{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    border-top:4px solid #ff4fa3;
+    transition:0.3s;
+}
+.feature-box:hover{
+    transform:translateY(-8px);
+    border-top:4px solid #3a86ff;
+}
+.feature-box i{
+    font-size:35px;
+    color:#ff4fa3;
+    margin-bottom:15px;
+}
+.feature-box h4{
+    margin-bottom:10px;
+    color:#3a86ff;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:linear-gradient(90deg,#3a86ff,#ff4fa3);
+    color:#fff;
+    padding:40px 8%;
+    text-align:center;
+    margin-top:40px;
+}
+
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+</style>
+  </head>
+  <body>
+    <div class="navbar">
+    <h2><i class="fa-solid fa-shield-halved"></i> Opaline Attachment</h2>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/login_user">User</a>
+        <a href="/login">Admin</a>
+        <a href="/register">Register</a>
+    </div>
+</div>
+	 <section id="introduction" class="gradient-violat padding-top-90 home-slider">
+      <p>&nbsp;</p>
+    </section>
+   
+    <section id="services" class="padding-top-90">
+      <div class="container">
+	  <form name="form1" method="post">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="img-responsive sm-display-none" src="../static/images/hand_phone.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="heading-wraper text-center margin-bottom-80">
+                  <h4>User Login</h4>
+                  <hr class="heading-devider gradient-orange">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="service-title">Username</h5>
+                <p class="services-content margin-bottom-25"><input type="text" name="uname" class="form-control" required></p>
+              </div>
+              
+            </div>
+			<div class="row">
+              <div class="col-md-6">
+                <h5 class="service-title">Password</h5>
+                <p class="services-content margin-bottom-25"><input type="password" name="pass" class="form-control" required></p>
+              </div>
+              
+            </div>
+			<div class="row">
+              <div class="col-md-6">
+                
+                <p class="services-content margin-bottom-25"><button type="submit" name="btn" class="btn btn-orange border-none btn-rounded-corner">Login</button></p>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+		</form>
+      </div>
+    </section>
+    <section id="cta" class="gradient-violat cta padding-top-bottom-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="cta-heading text-white">Opaline Attachment</h3>
+            <p class="text-white">Image Rendering for Malicious Email Attachments</p>
+            <div class="cta-btn-group">
+              <!--<a class="btn btn-orange border-none btn-rounded-corner" href="#">Download <span class="icon-on-button"><i class="ion-ios-cloud-download-outline"></i></span></a>
+              <a class="btn btn-white gradient-white border-none btn-rounded-corner" href="#">Live demo<span class="icon-on-button"><i class="ion-ios-arrow-thin-right"></i></span></a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   
+   
+    <footer class="padding-top-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-left-content">
+              <div class="logo-colored">
+                <img src="../static/images/Logo_color.png" alt="">Opaline Attachment
+              </div>
+              <div class="content">
+                <p class="margin-bottom-30 margin-top-30">Advanced spam filters can help detect and block malicious email files before they reach your primary inbox.</p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              
+              <div class="col-md-3 col-sm-6">
+                <div class="footer-list-wiget">
+                  <h4>Links</h4>
+                  <div class="list-group">
+                    <a href="/" class="list-group-item">Home</a>
+                    <a href="/login_user" class="list-group-item">User</a>
+                    <a href="/login" class="list-group-item">Admin</a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <hr class="footer-divider">
+          <div class="copyright-cta">
+            <p class="text-uppercase"><a href="https://themewagon.com/"><span class="span text-violat "></span></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-end-line"></div>
+    </footer>
+    <div id="scroll-top-div" class="scroll-top-div">
+      <div class="scroll-top-icon-container">
+        <i class="ion-ios-arrow-thin-up"></i>
+      </div>
+    </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/script.js"></script>
+  </body>
+</html>

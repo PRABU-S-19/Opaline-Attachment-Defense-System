@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crystalline Attachment</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f4f8fc;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0, 90, 150, 0.85);
+    backdrop-filter:blur(8px);
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+.navbar h2{
+    color:#fff;
+    font-weight:700;
+}
+.nav-links a{
+    color:#fff;
+    margin-left:25px;
+    text-decoration:none;
+    font-weight:500;
+    position:relative;
+    transition:0.3s;
+}
+.nav-links a::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:2px;
+    background:#00e0ff;
+    left:0;
+    bottom:-5px;
+    transition:0.3s;
+}
+.nav-links a:hover::after{
+    width:100%;
+}
+.nav-links a:hover{
+    color:#00e0ff;
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+    height:100vh;
+    background:linear-gradient(135deg,#0072ff,#00c6ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    padding:0 10%;
+}
+.hero h1{
+    font-size:50px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.hero p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
+.hero button{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#fff;
+    color:#0072ff;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+.hero button:hover{
+    background:#00e0ff;
+    color:#fff;
+}
+
+/* ===== FEATURES ===== */
+.features{
+    padding:80px 8%;
+    background:#f4f8fc;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+.section-title h2{
+    font-weight:700;
+    color:#003366;
+}
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+.feature-box{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+    border:1px solid #e3f2fd;
+}
+.feature-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.1);
+}
+.feature-box i{
+    font-size:35px;
+    color:#0072ff;
+    margin-bottom:15px;
+}
+.feature-box h4{
+    margin-bottom:10px;
+    color:#003366;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#003366;
+    color:#fff;
+    padding:50px 8%;
+}
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+footer h4{
+    margin-bottom:15px;
+}
+footer a{
+    color:#ccc;
+    text-decoration:none;
+    display:block;
+    margin-bottom:8px;
+    transition:0.3s;
+}
+footer a:hover{
+    color:#00e0ff;
+}
+.footer-bottom{
+    text-align:center;
+    margin-top:40px;
+    border-top:1px solid rgba(255,255,255,0.2);
+    padding-top:20px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2><i class="fa-solid fa-shield-halved"></i> Crystalline Attachment</h2>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/login_user">User</a>
+        <a href="/login">Admin</a>
+        <a href="/register">Register</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>AI-Powered Email Attachment Protection</h1>
+        <p>
+        A Hybrid System using RoBERTa and Static Image Rendering to detect, 
+        isolate, and sanitize malicious email attachments before they harm your system.
+        </p>
+        <button onclick="location.href='/login_user'">Get Started</button>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <div class="section-title">
+        <h2>Core Security Features</h2>
+    </div>
+    <div class="feature-grid">
+        <div class="feature-box">
+            <i class="fa-solid fa-brain"></i>
+            <h4>RoBERTa Deep Analysis</h4>
+            <p>Semantic and structural detection of hidden malicious content using transformer models.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fa-solid fa-lock"></i>
+            <h4>Sandbox Isolation</h4>
+            <p>Potential threats are automatically moved into secure environments.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fa-solid fa-image"></i>
+            <h4>Static PNG Rendering</h4>
+            <p>Attachments converted into safe non-executable previews for secure viewing.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fa-solid fa-user-shield"></i>
+            <h4>Controlled Access</h4>
+            <p>User confirmation required before opening flagged attachments.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <div>
+            <h4>About</h4>
+            <p>Crystalline Attachment protects users from zero-day and polymorphic email attachment threats using AI-driven classification.</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="/">Home</a>
+            <a href="/login_user">User Login</a>
+            <a href="/login">Admin Login</a>
+            <a href="/register">Register</a>
+        </div>
+
+        <div>
+            <h4>Security</h4>
+            <a href="#">Threat Detection</a>
+            <a href="#">Sanitization</a>
+            <a href="#">Monitoring</a>
+            <a href="#">Audit Logs</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Crystalline Attachment | Secure Email Intelligence Platform
+    </div>
+</footer>
+
+</body>
+</html>
